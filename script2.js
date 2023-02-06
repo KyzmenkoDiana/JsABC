@@ -1,1 +1,1 @@
-alert('I life in Armyansk')
+alert('Avocado')
