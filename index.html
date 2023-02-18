@@ -5,10 +5,16 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        let obj = { x: 1, y: 2, z: 3 };
-        delete obj.x;
-        console.log('x' in obj);
-            /*Выведет х->false*/
+        /*1*/
+        console.log(typeof { x: 1, y: 2, z: 3 });/*Выведет object*/
+        /*2*/
+        console.log(typeof {});/*Выведет object*/
+        /*3*/
+        let obj1 = { x: 1, y: 2, z: 3 };
+        console.log(typeof obj1); /*Выведет object*/
+        /*4*/
+        let obj2 = { x: 1, y: 2, z: 3 };
+        console.log(typeof obj2['x']); /*Выведет number*/
     </script>
 </head>
 
