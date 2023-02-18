@@ -6,10 +6,9 @@
     <title>JS</title>
     <script>
         let obj = { x: 1, y: 2, z: 3 };
-
+        delete obj.x;
         console.log('x' in obj);
-        console.log('w' in obj);
-            /*Выведет х-> true и false->w*/
+            /*Выведет х->false*/
     </script>
 </head>
 
