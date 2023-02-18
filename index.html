@@ -6,27 +6,22 @@
     <title>JS</title>
     <script>
         /*1*/
-        let test = { x: 1, y: 2, z: 3 };
-        console.log(test);/*Выведет object 1,2,3*/
+        let arr1 = [1, 2, 3];
+        let arr2 = arr1;
+        arr1[0] = 'a';
+        console.log(arr2);/*Выведет a,2,3*/
         /*2*/
-        let test1 = { x: 1, y: 2, z: 3 };
-        console.log(test1.x);/*Выведет object 1*/
+        let arr3 = [1, 2, 3];
+        let arr4 = arr3;
+        arr3[0] = 'a';
+        arr4[1] = 'b';
+        console.log(arr3); /*Выведет a,b,3*/
         /*3*/
-        let test2 = [1, 2, 3];
-        console.log(test2);/*Выведет object 1,2,3*/
-        /*4*/
-        let test3 = [1, 2, 3];
-        console.log(test3[1]);/*Выведет 2*/
-        /*5*/
-        let test4 = [1, 2, 3];
-        let test5 = 1;
-        console.log(test4);/*Выведет object 1,2,3*/
-        /*6*/
-        let test6 = [1, 2, 3];
-        let test7 = 1;
-        console.log(test6[test7]);/*Выведет 2*/
-        /*7*/
-        /* number, string, null, boolean */
+        let arr5 = [1, 2, 3];
+        let arr6 = arr5;
+        arr5[0] = 'a';
+        arr6[0] = 'b';
+        console.log(arr6);/*Выведет b,2,3*/
     </script>
 </head>
 
