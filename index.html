@@ -6,18 +6,9 @@
     <title>JS</title>
     <script>
         /*1*/
-        console.log(typeof { x: 1, y: 2, z: 3 });/*Выведет object*/
+        console.log(Array.isArray([1, 2, 3]));/*Выведет true*/
         /*2*/
-        console.log(typeof [1, 2, 3]);/*Выведет object*/
-        /*3*/
-        let arr1 = [1, 2, 3];
-        console.log(typeof arr1);/*Выведет object*/
-        /*4*/
-        let arr2 = [1, 2, 3];
-        console.log(typeof arr2[0]);/*Выведет number*/
-        /*5*/
-        let arr = ['1', '2', '3'];
-        console.log(typeof arr[0]);/*Выведет string*/
+        console.log(Array.isArray({ x: 1, y: 2, z: 3 }));/*Выведет false*/
     </script>
 </head>
 
