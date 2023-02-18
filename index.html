@@ -8,13 +8,16 @@
         /*1*/
         console.log(typeof { x: 1, y: 2, z: 3 });/*Выведет object*/
         /*2*/
-        console.log(typeof {});/*Выведет object*/
+        console.log(typeof [1, 2, 3]);/*Выведет object*/
         /*3*/
-        let obj1 = { x: 1, y: 2, z: 3 };
-        console.log(typeof obj1); /*Выведет object*/
+        let arr1 = [1, 2, 3];
+        console.log(typeof arr1);/*Выведет object*/
         /*4*/
-        let obj2 = { x: 1, y: 2, z: 3 };
-        console.log(typeof obj2['x']); /*Выведет number*/
+        let arr2 = [1, 2, 3];
+        console.log(typeof arr2[0]);/*Выведет number*/
+        /*5*/
+        let arr = ['1', '2', '3'];
+        console.log(typeof arr[0]);/*Выведет string*/
     </script>
 </head>
 
