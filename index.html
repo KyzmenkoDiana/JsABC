@@ -2,33 +2,16 @@
 <html lang="en">
 
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
+    <meta charset="UTF-8" />
+    <title>JS</title>
+    <script>
+        let obj = { x: 1, y: 2, z: 3 };
 
-    <head>
-        <meta charset="UTF-8" />
-        <title>JS</title>
-        <script>
-            /*1*/
-            let x = 'key';
-            let obj = {
-                key: 1,
-                y: 2,
-                z: 3
-            };
-            console.log(obj[x]);
-            /*2*/
-            let obj2 = {
-                x: 1,
-                y: 2,
-                z: 3
-            };
-            let key1 = 'x';
-            let key2 = 'y';
-            let key3 = 'z';
-            console.log(obj2[key1], obj2[key2], obj2[key3]);
-        </script>
-    </head>
+        console.log('x' in obj);
+        console.log('w' in obj);
+            /*Выведет х-> true и false->w*/
+    </script>
+</head>
 
 <body>
     <h1>Diana</h1>
