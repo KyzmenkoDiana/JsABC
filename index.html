@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        let ok = confirm('Вам есть 18?');
-        if (ok) {
-            console.log('доступ разрешен');
+        let adult = true;
+        let age;
+        if (age >= 18) {
+            let adult = true;
         } else {
-            console.log('доступ запрещен!');
+            let adult = false;
         }
+        console.log(adult);
     </script>
 </head>
 
