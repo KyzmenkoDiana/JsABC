@@ -6,75 +6,65 @@
     <title>JS</title>
     <script>
         /*1*//*
-        let test = 3;
-        if (test) {
+        let test1 = true;
+        let test2 = true;
+        if (test1 && test2) {
             console.log('+++');
         } else {
             console.log('---');
-        }/*выведет +++*/
+        }
         /*2*//*
-        let test = 'abc';
-        if (test) {
+        let test1 = true;
+        let test2 = false;
+        if (test1 && test2) {
             console.log('+++');
         } else {
             console.log('---');
-        }/*выведет +++*/
+        }
         /*3*//*
-        let test = '';
-        if (test) {
+        let test1 = true;
+        let test2 = true;
+        if (test1 && test2 !==
+            true) {
             console.log('+++');
         } else {
             console.log('---');
-        }/*выведет ---*/
+        }
         /*4*//*
-        let test = 3 * 'abc';
-        if (test) {
+        let test1 = true;
+        let test2 = true;
+        if (test1 && test2 === true) {
             console.log('+++');
         } else {
             console.log('---');
-        }/*выведет ---*/
+        }
         /*5*//*
-        let test = null;
-        if (test) {
+        let test1 = true;
+        let test2 = true;
+        let test3 = true;
+        if (test1 && test2 && test3 === true) {
             console.log('+++');
         } else {
             console.log('---');
-        }/*выведет ---*/
+        }
         /*6*//*
-        let test = false;
-        if (test) {
+        let test1 = true;
+        let test2 = true;
+        let test3 = true;
+        if (test1 || test2 && test3 === true) {
             console.log('+++');
         } else {
             console.log('---');
-        }/*выведет ---*/
-        /*7*//*
-        let test;
-        if (test) {
+        }
+/*7*/
+        let test1 = true;
+        let test2 = true;
+        let test3 = true;
+        if (test1 || test2 && test3 === false) {
             console.log('+++');
         } else {
             console.log('---');
-        }/*выведет ---*/
-        /*8*//*
-        let test = 0;
-        if (test) {
-            console.log('+++');
-        } else {
-            console.log('---');
-        } /*выведет ---*/
-        /*9*//*
-        let test = '0';
-        if (test) {
-            console.log('+++');
-        } else {
-            console.log('---');
-        }/*выведет +++*/
-        /*10*/
-        let test = -1;
-        if (test) {
-            console.log('+++');
-        } else {
-            console.log('---');
-        }/*выведет +++*/
+        }
     </script>
 </head>
 
