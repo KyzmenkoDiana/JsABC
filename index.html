@@ -6,19 +6,22 @@
     <title>JS</title>
     <script>
         /*1*/
-        let num = 58;
-        if (String(num)[0] == 0) {
-            console.log('Yes')
-        } else {
-            console.log('Not')
-        }
-        /*2*/
-        let num2 = 9;
-        let first = String(num2)[0];
-        if (first == 0 || first == 2 || first == 4 || first == 6 || first == 8) {
+        let num = 18;
+        let num1 = 6
+        let rest = num % num1;
+        if (rest == 0) {
             console.log('четное')
         } else {
             console.log('нечетное')
+        }
+        /*2*/
+        let num2 = 32;
+        let num3 = 3;
+        let rest1 = num2 % num3;
+        if (rest1 == 0) {
+            console.log('четное')
+        } else {
+            console.log('нечетное' + rest1)
         }
     </script>
 </head>
