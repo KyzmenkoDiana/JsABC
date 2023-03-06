@@ -5,13 +5,30 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        for (let i = 0; i <= 9; i++) {
-            let num = 3;
-
-            for (let j = 0; j <= 9; j++) {
-                console.log(num);
+        /*1*//*
+        let arr = [];
+        for (let i = 1; i <= 10; i++) {
+            arr.push(i);
+        }
+        console.log(arr);
+        /*2*//*
+        let arr = [];
+        for (let i = 1; i <= 10; i++) {
+            arr.push('x');
+        }
+        console.log(arr);
+        /*3*/
+        let arr = [1, -2, -3, 4, -5, 6, -7, -8, 9];
+        let arr1 = [];
+        for (let key in arr) {
+            if (arr[key] > 0) {
+                arr1.push(arr[key]);
+            } else {
+                continue;
             }
         }
+        console.log(arr);
+        console.log(arr1);
     </script>
 </head>
 
