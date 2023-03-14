@@ -5,24 +5,13 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        /*1*/
-        let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
-        let counter = 0;
+        let arr = ['a', 'b', 'c', 'a', 'b', 'a', 'b', 'c', 'r', 'a'];
+        let count = { a: 0, b: 0, c: 0, r: 0 };
         for (let elem of arr) {
-            if (elem == '3') {
-                counter++;
-            }
+            count[elem]++;
         }
-        console.log(counter);
-        /*2*/
-        let arr1 = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
-        let counter1 = 0;
-        for (let elem of arr1) {
-            if (elem == '3' || elem == '2') {
-                counter1++;
-            }
-        }
-        console.log(counter1);
+        console.log(count);
+
     </script>
 </head>
 
