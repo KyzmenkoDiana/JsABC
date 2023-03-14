@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        let arr = [10, 20, 30, 40, 21, 32, 51];
+        let arr = { a: 10, b: 20, c: 30, d: 40, e: 50 };
         let sum = 0;
-        for (let elem of arr) {
-            if (elem == 1 || elem == 2) {
-                sum += elem;
+        for (let elem in arr) {
+            if (+elem[0] === +elem[1] + 1) {
+                sum += +elem;
             }
         }
         console.log(sum);
