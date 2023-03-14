@@ -5,34 +5,24 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        /*1*//*
-        let arr = ['a', 'b', 'c', 'd', 'e'];
-        let flag = false;
+        /*1*/
+        let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+        let counter = 0;
         for (let elem of arr) {
-            if (elem == 'c') {
-                flag = true;
-                break;
+            if (elem == '3') {
+                counter++;
             }
         }
-        if (flag === true) {
-            console.log('+++');
-        } else {
-            console.log('---');
-        }
+        console.log(counter);
         /*2*/
-        let arr = [1, 2, 3, 4, 5];
-        let flag = false;
-        for (let elem of arr) {
-            if (elem % 2 == 0) {
-                flag = true;
-                break;
+        let arr1 = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+        let counter1 = 0;
+        for (let elem of arr1) {
+            if (elem == '3' || elem == '2') {
+                counter1++;
             }
         }
-        if (flag === true) {
-            console.log('+++');
-        } else {
-            console.log('---');
-        }
+        console.log(counter1);
     </script>
 </head>
 
