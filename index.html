@@ -6,132 +6,59 @@
     <title>JS</title>
     <script>
         /*1*//*
-        for (let i = 0; i <= 10; i++) {
-        console.log(i);
+        for (i = 1; i <= 100; i++) {
+            console.log(i);
         }
         /*2*//*
-        for (let i = 10; i >= 0; i--) {
-        console.log(i);
+        for (i = 100; i >= 1; i--) {
+            console.log(i);
         }
         /*3*//*
-        for (let i = 10; i >= 0; i--) {
-        console.log(i);
+        for (i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                console.log(i);
+            }
         }
         /*4*//*
-        let i = 0;
-        while (i <= 10) {
-        console.log(i);
-        i++;
+        let arr = '';
+        for (let i = 0; i < 10; i++) {
+            arr += 'x';
         }
-        /*5*//*
-        let res = 0;
-        for (let i = 1; i <= 10; i++) {
-        res += i;
-        }    
-        console.log(res);                  
-        /*6*//*
-        let res = 1;
-        for (let i = 1; i <= 10; i++) {
-            res *= i;
-        }
-        console.log(res);
-        /*7*//*
-        let arr = [1, 2, 3, 4, 5];
-        let sum = 0;
+        console.log(arr);
+         /*5*//*
+       let arr = '';
+       for (let i = 1; i <= 10; i++) {
+       arr += i;
+       }
+       console.log(arr);
+       /*7*//*
+        let arr = [1, 2, 3, 4, 5, 6, 7];
+        let flag = false;
         for (let elem of arr) {
-            sum += elem;
+        if (elem == 5) {
+        flag = true;
+        break;
         }
-        console.log(sum);
+        }
+        if (flag === true) {
+        console.log('+++');
+        } else {
+        console.log('---');
+        }
         /*8*//*
         let arr = [1, 2, 3, 4, 5];
         let sum = 0;
         for (let elem of arr) {
-            sum += +elem;
+        sum += elem;
         }
         console.log(sum);
-        /*9*//*
-        let arr = [1, 2, 3, 4, 5];
-        let sum = 0;
-        for (let elem of arr) {
-            sum += elem;
-        }
-        console.log(sum); 
-        /*10*//*
-        let arr = [1, 2, 3, 4, 5];
-        let sum = 0;
-        for (let i = 0; i < arr.length
-            - 1; i++) {
-            sum += arr[i];
-        }
-        console.log(sum);
-        /*11*//*
-        let arr = [1, 2, 3, 4, 5];
-        let sum = 0;
-        for (let i = 0; i < arr.length
-            - 1; i++) {
-            sum += +arr[i];
-        }
-        console.log(sum);
-        /*12*//*
-        let arr = [1, 2, 3, 4, 5];
-        let sum = 0;
-        for (let i = 0; i < arr.length;
-            i++) {
-            sum += +i;
-        }
-        console.log(sum);
-        /*13*//*
-        let arr = [1, 2, 3, 4, 5];
-        for (let i = 0; i < arr.length;
-            i++) {
-            arr[i] = arr[i] ** 2;
-        }
-        console.log(arr);
-        /*14*//*
+        /*9*/
         let arr = [];
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 10; i >= 1; i--) {
             arr.push(i);
         }
         console.log(arr);
-        /*17*//*
-        let arr = [1, 2, 3, 4, 5];
-        let res = 0;
-        for (let elem of arr) {
-            if (elem == 3) {
-                res++;
-            }
-        }
-        console.log(res);
-        /*18*//*
-        let arr = [];
-        for (let i = 1; i <= 5; i++) {
-            arr.push(i);
-        }
-        console.log(arr);
-        /*19*//*
-        let arr = [1, 2, 3, 4, 5];
-        let res = false;
-        for (let elem of arr) {
-            if (elem == 3) {
-                res = true;
-                break;
-            }
-        }
-        console.log(res);
-        /*20*//*
-        let arr = [1, 2, 3, 4, 5];
-        for (let elem of arr) {
-            if (elem % 2 == 0) {
-                console.log(elem);
-            }
-        }
-        /*21*/
-        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-        for (let elem of arr) {
-            if (elem % 2) {
-                console.log(elem);
-            }
-        }
+
     </script>
 </head>
 
