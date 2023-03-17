@@ -5,82 +5,15 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        /*1*//*
-        let obj = {
-            1: {
-                1: 11,
-                2: 12,
-                3: 13,
-            },
-            2: {
-                1: 21,
-                2: 22,
-                3: 23,
-            },
-            3: {
-                1: 24,
-                2: 25,
-                3: 26,
-            },
-        }
-        let rez = 0;
-        for (let key in obj) {
-            let subObj = obj[key];
-            for (let subKey in subObj) {
-                rez += (subObj[subKey]);
-            }
-        }
-        console.log(rez);
-        /*2*/
-        let obj = {
-            1: {
-                1: {
-                    1: 111,
-                    2: 112,
-                    3: 113,
-                },
-                2: {
-                    1: 121,
-                    2: 122,
-                    3: 123,
-                },
-            },
-            2: {
-                1: {
-                    1: 211,
-                    2: 212,
-                    3: 213,
-                },
-                2: {
-                    1: 221,
-                    2: 222,
-                    3: 223,
-                },
-            },
-            3: {
-                1: {
-                    1: 311,
-                    2: 312,
-                    3: 313,
-                },
-                2: {
-                    1: 321,
-                    2: 322,
-                    3: 323,
-                },
-            },
-        }
-        let rez = 0;
-        for (let key in obj) {
-            let obj1 = obj[key];
-            for (let key2 in obj1) {
-                let obj2 = obj1[key2];
-                for (let key3 in obj2) {
-                    rez += obj2[key3]
-                }
-            }
+        let students = {
+            'group1': ['name11', 'name12',
+                'name13'],
+            'group2': ['name21', 'name22',
+                'name23'],
+            'group3': ['name31', 'name32',
+                'name33'],
         };
-        console.log(rez)
+        console.log(students['group3'][0]);
     </script>
 </head>
 
