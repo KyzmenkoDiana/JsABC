@@ -6,43 +6,61 @@
     <title>JS</title>
     <script>
         /*1*/
-        console.log(Math.pow(2, 10));
+        let str = 'js'
+        console.log(str.toUpperCase());
         /*2*/
-        console.log(Math.sqrt(245))
+        let str1 = 'JS'
+        console.log(str.toLocaleLowerCase());
         /*3*/
-        let arr = [4, 2, 5, 19, 13, 0, 10];
-        let arr1 = 0;
-        for (let i in arr) {
-            arr1 += (Math.sqrt(i, 3))
-        };
-        console.log(Math.sqrt(arr1));
+        let str2 = 'я учу javascript';
+        console.log(str2.substr(0, 2));
+        console.log(str2.substring(2, 5));
+        console.log(str2.slice(6, 16));
         /*4*/
-        console.log(Math.round(Math.sqrt(379)));
-        /*5*/
-        let a = (Math.sqrt(587));
-        console.log(Math.floor(a));
-        console.log(Math.ceil(a))
-        /*6*/
-        console.log(Math.max(4, -2, 5, 19, -130, 0, 10));
-
-        console.log(Math.min(4, -2, 5, 19, -130, 0, 10));
-        /*7*/
-        function getRandom(min, max) {
-            return Math.floor(Math.random() * (max - min
-                + 1)) + min;
-        }
-        console.log(getRandom(1, 100));
-        /*8*/
-        let arr3 = [];
-        for (let i = 1; i <= 10; i++) {
-            arr3.push(getRandom(1, 200));
-            console.log(arr3)
+        let str3 = 'abcde';
+        console.log(str3.indexOf('c'));
+        // 5
+        let str4 = 'abcde';
+        if (str4.indexOf('a') >= 0) {
+            console.log('true')
+        } else {
+            console.log('false')
         };
-        /*9*/
-        let a1 = -9;
-        let b1 = 20;
-        let c1 = (Math.abs(a1) - Math.abs(b1));
-        console.log(c1);
+        // 6
+        let str5 = 'bcade';
+        if (str5.indexOf('a') == 0) {
+            console.log('true')
+        } else {
+            console.log('false')
+        };
+        // 7
+        let str6 = 'http://bcdea.html';
+        if (str6.lastIndexOf('.html') == str6.length - 5) {
+            console.log('true')
+        } else {
+            console.log('false')
+        };
+        // 8
+        let str7 = 'http://abcd.html';
+        if (str7.startsWith('http://')) {
+            console.log('true')
+        } else {
+            console.log('false')
+        };
+        // 9
+        let str8 = 'http://abcd.html';
+        if (str8.endsWith('.html')) {
+            console.log('true')
+        } else {
+            console.log('false')
+        };
+        // 10
+        let str9 = '1-2-3-4-5';
+        let a = str9.split('-');
+        console.log(a);
+        // 11
+        let arr = [1, 2, 3, 4, 5];
+        console.log(arr.join('-'))
     </script>
 </head>
 
