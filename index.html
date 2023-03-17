@@ -5,120 +5,29 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        /*1*/
-        let months = {
-            'ru': [
-                'январь',
-                'февраль',
-                'март',
-                'апрель',
-                'май',
-                'июнь',
-                'июль',
-                'август',
-                'сентябрь',
-                'октябрь',
-                'ноябрь',
-                'декабрь',
-            ],
-            'en': [
-                'january',
-                'february',
-                'march',
-                'april',
-                'may',
-                'june',
-                'july',
-                'august',
-                'september',
-                'october',
-                'november',
-                'december',
-            ],
-        };
-        let lang = 'ru';
-        let month = 9;
-        console.log(months['ru'][8]);
-        /*2*/
-        let affairs = {
-            '2018': {
-                11: {
-                    29: ['дело111', 'дело112', 'дело113'],
-                    30: ['дело121', 'дело122', 'дело123'],
-                },
-                12: {
-                    30: ['дело211', 'дело212', 'дело213'],
-                    31: ['дело221', 'дело222', 'дело223'],
-                },
+        let employees = [
+            {
+                name: 'name1',
+                salary: 300,
+                age: 28,
             },
-            '2019': {
-                12: {
-                    29: ['дело311', 'дело312', 'дело313'],
-                    30: ['дело321', 'дело322', 'дело323'],
-                    31: ['дело331', 'дело332', 'дело333'],
-                }
+            {
+                name: 'name2',
+                salary: 400,
+                age: 29,
             },
-        }
-        let got = '2019';
-        let months1 = 12;
-        let day = 30;
-        console.log(affairs[got][months1][day]);
-        /*3*//*
-        let obj = {
-            key1: {
-                key2: '12',
-                key3: '13',
+            {
+                name: 'name3',
+                salary: 500,
+                age: 30,
             },
-            key2: {
-                key4: '24',
-                key5: '25',
-            },
-        }
-        let key2 = 'key2';
-        let key4 = 'key4';
-        console.log(obj[key2][key4]);
-        /*4*//*
-        let obj = {
-            key1: {
-                key2: '12',
-                key3: '13',
-            },
-            key2: {
-                key4: '24',
-                key5: '25',
-            },
-        }
-        let key2 = 'key2';
-        let key4 = 'key4';
-        console.log(obj.key2.key4);
-        /*5*//*
-        let obj = {
-            key1: {
-                key2: '12',
-                key3: '13',
-            },
-            key2: {
-                key4: '24',
-                key5: '25',
-            },
-        }
-        let key2 = 'key2';
-        let key4 = 'key4';
-        console.log(obj.key2['key4']);
-        /*6*/
-        let obj = {
-            key1: {
-                key2: '12',
-                key3: '13',
-            },
-            key2: {
-                key4: '24',
-                key5: '25',
-            },
-        }
-        let key2 = 'key2';
-        let key4 = 'key4';
-        console.log(obj['key2']['key4']);
+        ];
+        employees.push({
+            name: 'name4',
+            salary: 600,
+            age: 31,
+        });
+        console.log(employees)
     </script>
 </head>
 
