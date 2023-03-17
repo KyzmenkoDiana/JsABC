@@ -5,53 +5,44 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        /*1*//*
-        let affairs = {
-            '2019-12-28': ['data11', 'data12',
-                'data13'],
-            '2019-12-29': ['data21', 'data22',
-                'data23'],
-            '2019-12-30': ['data31', 'data32',
-                'data33'],
-        }
-        affairs['2019-12-29'].push('data24')
-        console.log(affairs);
-        /*2*//*
-        affairs['2019-12-31'] = [];
-        affairs['2019-12-31'].push('data41')
-        console.log(affairs);
+        /*1*/
+        console.log(Math.pow(2, 10));
+        /*2*/
+        console.log(Math.sqrt(245))
         /*3*/
-        let students = {
-            'group1': {
-                'subgroup11': ['student111', 'student112',
-                    'student113'],
-                'subgroup12': ['student121', 'student122',
-                    'student123'],
-            },
-            'group2': {
-                'subgroup21': ['student211', 'student212',
-                    'student213'],
-                'subgroup22': ['student221', 'student222',
-                    'student223'],
-            },
-            'group3': {
-                'subgroup31': ['student311', 'student312',
-                    'student313'],
-                'subgroup32': ['student321', 'student322',
-                    'student323'],
-            },
+        let arr = [4, 2, 5, 19, 13, 0, 10];
+        let arr1 = 0;
+        for (let i in arr) {
+            arr1 += (Math.sqrt(i, 3))
         };
-        /*4*//*
-        students['group1']['subgroup11'].push('student114');
-        console.log(students);
-        /*5*//*
-        students.group1 = [];
-        students.group1.push('subgroup13');
+        console.log(Math.sqrt(arr1));
+        /*4*/
+        console.log(Math.round(Math.sqrt(379)));
+        /*5*/
+        let a = (Math.sqrt(587));
+        console.log(Math.floor(a));
+        console.log(Math.ceil(a))
         /*6*/
-        students.group4 = [];
-        students.group4.push('subgroup41');
-        students.group4.subgroup41.push('student411');
-        console.log(students);
+        console.log(Math.max(4, -2, 5, 19, -130, 0, 10));
+
+        console.log(Math.min(4, -2, 5, 19, -130, 0, 10));
+        /*7*/
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min
+                + 1)) + min;
+        }
+        console.log(getRandom(1, 100));
+        /*8*/
+        let arr3 = [];
+        for (let i = 1; i <= 10; i++) {
+            arr3.push(getRandom(1, 200));
+            console.log(arr3)
+        };
+        /*9*/
+        let a1 = -9;
+        let b1 = 20;
+        let c1 = (Math.abs(a1) - Math.abs(b1));
+        console.log(c1);
     </script>
 </head>
 
@@ -60,6 +51,7 @@
 </body>
 
 </html>
+
 <style>
     h1 {
         color: blue;
