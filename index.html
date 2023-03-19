@@ -6,61 +6,47 @@
     <title>JS</title>
     <script>
         /*1*/
-        let str = 'js'
-        console.log(str.toUpperCase());
+        let arr = [1, 2, 3];
+        arr.push(4, 5, 6);
+        console.log(arr);
         /*2*/
-        let str1 = 'JS'
-        console.log(str.toLocaleLowerCase());
+        let arr1 = [1, 2, 3];
+        arr1.unshift(4, 5, 6);
+        console.log(arr1);
         /*3*/
-        let str2 = 'я учу javascript';
-        console.log(str2.substr(0, 2));
-        console.log(str2.substring(2, 5));
-        console.log(str2.slice(6, 16));
+        let arr2 = [1, 2, 3];
+        let elem = arr2.shift(1);
+        console.log(elem);
         /*4*/
-        let str3 = 'abcde';
-        console.log(str3.indexOf('c'));
-        // 5
-        let str4 = 'abcde';
-        if (str4.indexOf('a') >= 0) {
-            console.log('true')
-        } else {
-            console.log('false')
-        };
-        // 6
-        let str5 = 'bcade';
-        if (str5.indexOf('a') == 0) {
-            console.log('true')
-        } else {
-            console.log('false')
-        };
-        // 7
-        let str6 = 'http://bcdea.html';
-        if (str6.lastIndexOf('.html') == str6.length - 5) {
-            console.log('true')
-        } else {
-            console.log('false')
-        };
-        // 8
-        let str7 = 'http://abcd.html';
-        if (str7.startsWith('http://')) {
-            console.log('true')
-        } else {
-            console.log('false')
-        };
-        // 9
-        let str8 = 'http://abcd.html';
-        if (str8.endsWith('.html')) {
-            console.log('true')
-        } else {
-            console.log('false')
-        };
-        // 10
-        let str9 = '1-2-3-4-5';
-        let a = str9.split('-');
-        console.log(a);
-        // 11
-        let arr = [1, 2, 3, 4, 5];
-        console.log(arr.join('-'))
+        let arr3 = [1, 2, 3];
+        let elem2 = arr3.pop(3);
+        console.log(elem2);
+        /*5*/
+        let arr4 = [1, 2, 3, 4, 5];
+        let elem3 = arr4.slice(0, 3);
+        console.log(elem3);
+        /*6*/
+        let arr5 = [1, 2, 3, 4, 5];
+        let elem4 = arr5.slice(3, 5);
+        console.log(elem4);
+        /*7*/
+        let arr6 = [1, 2, 3, 4, 5];
+        arr6.splice(1, 2);
+        console.log(arr6);
+        /*8*/
+        let arr7 = [1, 2, 3, 4, 5];
+        arr7.splice(3, 0, 'a', 'b', 'c');
+        console.log(arr7);
+        /*9*/
+        let arr8 = [1, 2, 3, 4, 5];
+        arr8.splice(1, 0, 'a', 'b', 2, 3, 4, 'c', 5, 'e');
+        console.log(arr8);
+        /*10*/
+        let arr9 = [1, 2, 3, 4, 5];
+        console.log(arr9.indexOf(4));
+        /*11*/
+        let arr10 = [1, 2, 3, 4, 5];
+        console.log(arr10.includes(3));
     </script>
 </head>
 
