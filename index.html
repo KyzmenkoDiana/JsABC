@@ -7,34 +7,16 @@
     <script>
         /*1*/
         function func(num) {
-            return num;
-            let res = num ** 2;
-            return res;
-        }
-        console.log(func(3));
-        //выполнится первый return. 
-        /*2*/
-        function func(num) {
-            if (num <= 0) {
-                return Math.abs(num);
-            } else {
-                return num ** 2;
-            }
-        }
-        console.log(func(10));
-        console.log(func(-5));
-        // выполнится тот что будет подходить значению параметра. Например если num<=0 то выполнится первый если больше то второй.
-        /*3*/
-        function func(num) {
-            if (num <= 0) {
-                return Math.abs(num);
-            }
+            let sum = 0;
 
-            return num ** 2;
+            for (let i = 1; i <= num; i++) {
+                sum += i;
+                //return sum;
+            }
+            return sum;
         }
-        console.log(func(10));
-        console.log(func(-5));
-        //выполнится первый (второй вообще никогда) только если поставить условие else.
+        console.log(func(5));
+            //Изначально цикл прокрутился бы лишь 1 раз и вышел бы из функции. Автор хотел вывести сумму цифр от 1 до 5.
     </script>
 </head>
 
