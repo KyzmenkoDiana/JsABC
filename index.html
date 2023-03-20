@@ -6,19 +6,17 @@
     <title>JS</title>
     <script>
         /*1*/
-        function func(num = 5) {
-            console.log(num * num);
+        function func(num) {
+            return num ** 3;
         }
-        func(2);//выведет 4
-        func(3);//выведет 9
-        func();//выведет 25
+        let rez = func(3);
+        console.log(rez);
         /*2*/
-        function func(num1 = 0, num2 = 0) {
-            console.log(num1 + num2);
+        function func(num1) {
+            return Math.sqrt(num1);
         }
-        func(2, 3);//выведет 5
-        func(3);//выведет 3
-        func();  //выведет 0
+        let rez2 = func(3) + func(4);
+        console.log(rez2);
     </script>
 </head>
 
