@@ -5,18 +5,36 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-        /*1*/
-        function func(num) {
-            return num ** 3;
+        /*1*//*
+        function sqrt(num) {
+            return Math.sqrt(num);
         }
-        let rez = func(3);
+        function round(num) {
+            return num.toFixed(3);
+        }
+        let rez = round(sqrt(2));
         console.log(rez);
-        /*2*/
-        function func(num1) {
-            return Math.sqrt(num1);
+        /*2*//*
+        function sqrt(num) {
+            return Math.sqrt(num);
         }
-        let rez2 = func(3) + func(4);
-        console.log(rez2);
+        function sum(num1, num2, num3) {
+            return num1 + num2 + num3;
+        }
+        let res = sqrt(sum(2, 3, 4));
+        console.log(res);
+        /*3*/
+        function round(num) {
+            return num.toFixed(3);
+        }
+        function sum(num1, num2, num3) {
+            return num1 + num2 + num3;
+        }
+        function sqrt(num) {
+            return Math.sqrt(num);
+        }
+        let rez = round(sqrt(sum(2, 5, 15)));
+        console.log(rez);
     </script>
 </head>
 
