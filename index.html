@@ -6,33 +6,45 @@
     <title>JS</title>
     <script>
         /*1*/
-        let str = 'diana';
-        console.log(str.slice(0, 1).toUpperCase() + str.slice(1));
-        /*2*/
-        let str1 = 'diana';
-        console.log(str1.slice(0, 2).toUpperCase() + str1.slice(1));
-        /*3*/
-        let str3 = 'Diana';
-        console.log(str.slice(0, 1).toLowerCase() + str.slice(1));
-        /*4*/
-        let str4 = 'diana1 diana2 diana3';
-        let dianaa = str4.split(' ');
-        for (let i = 0; i < dianaa.length; i++) {
-            dianaa[i] = dianaa[i].slice(0, 1).toUpperCase() + dianaa[i].slice(1);
+        let num = '12345';
+        let arr = num.split('');
+        let sum = 0;
+        for (let digit of arr) {
+            sum += Number(digit);
         }
-        console.log(dianaa);
+        console.log(sum);
+        /*2*/
+        let num1 = 12345;
+        let arr1 = String(num1).split('');
+        let sum1 = 0;
+        for (let digit of arr1) {
+            sum1 += Number(digit);
+        }
+        console.log(sum1);
+        /*3*/
+        let num2 = 12345;
+        let arr2 = String(num2).split('');
+        let sum2 = 0;
+        for (let digit of arr2) {
+            sum2 += Number(digit);
+        }
+        console.log(sum2);
+        /*4*/
+        let num3 = 12345;
+        let arr3 = String(num3).split('');
+        let sum3 = 0;
+        for (let digit of arr3) {
+            sum3 += Number(digit);
+        }
+        console.log(sum3);
         /*5*/
-        let str5 = 'var_test_text';
-        let text = str5.split('_');
-        for (let i = 0; i <= text.length - 1; i++) {
-            text[i] = text[i].slice(0, 1).toUpperCase() + text[i].slice(1);
-        };
-        str5 = text.join('');
-        console.log(str5)
-        /*6*/
-        let str6 = 'Hello my name diana';
-        let rez = str6.split('').reverse().join('');
-        console.log(rez); 
+        let num4 = 12345;
+        let arr4 = String(num4).split('');
+        let prod = 1;
+        for (let digit of arr4) {
+            prod *= Number(digit);
+        }
+        console.log(prod);
     </script>
 </head>
 
