@@ -6,52 +6,20 @@
     <title>JS</title>
     <script>
         /*1*/
-        let arr1 = [2, 4, 6];
-        function func(arr) {
-            for (let elem of arr) {
-                if (elem % 2 != 0) {
-                    return false;
-                }
-            };
-            return true;
+        function func(a, b) {
+            return a == b;
         };
-        if (func(arr1)) {
-            console.log('+++');
-        } else {
-            console.log('---')
-        }
         /*2*/
-        let num = 4663;
-        function func(number) {
-            let arrNum = String(number).split('')
-            for (let elem of arrNum) {
-                if (elem % 2 != 0) {
-                    return false;
-                }
-            };
-            return true;
+        function func(a, b) {
+            return a != b;
         };
-        if (func(num)) {
-            console.log('+++');
-        } else {
-            console.log('---')
-        }
-        // 3
-        let arr3 = [2, 3, 4, 4, 7];
-        function func(arr) {
-            for (let i = 0; i <= arr.length - 1; i++) {
-                if (arr[i] == arr[i + 1]) {
-                    return true;
-                } else {
-                    continue;
-                }
-            };
-            return false;
-        }
-        if (func(arr3)) {
-            console.log('+++');
-        } else {
-            console.log('---')
+        /*3*/
+        function func(a, b) {
+            return a + b >= 10;
+        };
+        /*4*/
+        function func(num) {
+            return num >= 0;
         }
     </script>
 </head>
