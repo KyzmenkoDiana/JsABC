@@ -6,13 +6,19 @@
     <title>JS</title>
     <script>
         /*1*/
-        function num(num1, num2, num3) {
-            console.log(num1 + num2 + num3);
+        function func(num = 5) {
+            console.log(num * num);
         }
-        let param1 = 1;
-        let param2 = 2;
-        let param3 = 3;
-        num(param1, param2, param3);
+        func(2);//выведет 4
+        func(3);//выведет 9
+        func();//выведет 25
+        /*2*/
+        function func(num1 = 0, num2 = 0) {
+            console.log(num1 + num2);
+        }
+        func(2, 3);//выведет 5
+        func(3);//выведет 3
+        func();  //выведет 0
     </script>
 </head>
 
