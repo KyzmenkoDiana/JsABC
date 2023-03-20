@@ -6,17 +6,15 @@
     <title>JS</title>
     <script>
         /*1*/
-        function func(num) {
-            let sum = 0;
-
-            for (let i = 1; i <= num; i++) {
-                sum += i;
-                //return sum;
+        function func(del) {
+            for (i = 1; i++;) {
+                del = del / 2;
+                if (del <= 10) {
+                    return i;
+                }
             }
-            return sum;
         }
-        console.log(func(5));
-            //Изначально цикл прокрутился бы лишь 1 раз и вышел бы из функции. Автор хотел вывести сумму цифр от 1 до 5.
+        console.log(func(100));
     </script>
 </head>
 
