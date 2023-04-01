@@ -6,62 +6,46 @@
     <title>JS</title>
     <script>
         /*1*/
-let num = 1;
-function func() {
-	num = 2;
+        function func(localNum) {
+	console.log(localNum);
 }
-func();
-console.log(num);
+func(1);
 /*2*/
+function func1(localNum1) {
+	console.log(localNum1);
+}
 let num1 = 1;
-function func1() {
-	num1 = 2;
-}
-console.log(num1);
+func(num1);
 /*3*/
-let num2 = 1;
-function func2() {
-	let num2 = 2;
+function func2(localNum2) {
+	console.log(localNum2);
 }
-func2();
-console.log(num2);
+let num2 = 1;
+func2(num2);
+num2 = 2;
 /*4*/
 let num3 = 1;
-function func3() {
-	let num3 = 2;
+function func3(localNum3) {
+	console.log(localNum3);
 }
-console.log(num3);
-func3();
+num3 = 2;
+func3(num3);
 /*5*/
+function func4(localNum4) {
+	localNum4 = 2;
+}
 let num4 = 1;
-function func4() {
-	num4 = 2;
-}
+func4(num4);
 console.log(num4);
-func4();
-/*6*/
-let num5 = 1;
-function func5() {
-	num5++;
-}
-func5();
-func5();
-func5();
-console.log(num5);
-/*7*/
-function func6() {
-	num6 = 2;
-}
-let num6 = 1;
-console.log(num6);
-func6();
-
-
+</script>
+</head>
 
 <body>
     <h1>Diana</h1>
 </body>
+
 </html>
+
 <style>
     h1 {
         color: blue;
