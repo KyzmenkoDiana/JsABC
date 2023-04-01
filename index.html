@@ -7,17 +7,20 @@
     <script>
         /*1*/
         function func() {
-	let num = 5;
-	return num;
+            let num = 1;
+function func() {
+	num = 2;
 }
+func();
 console.log(num);
 /*2*/
-function func() {
-	let num = 5;
-	return num;
+let num1 = 1;
+function func1() {
+	let num1 = 2;
 }
-console.log(func());
-    </script>
+func1();
+console.log(num1);
+</script>
 </head>
 
 <body>
