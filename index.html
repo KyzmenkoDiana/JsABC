@@ -6,45 +6,64 @@
     <title>JS</title>
     <script>
         /*1*/
-let newobj = {
-    func1: function () { return 1 },
-    func2: function () { return 2 },
-    func3: function () { return 3 },
-};
-let sum = newobj.func1() + newobj.func2() + newobj.func3();
-console.log(sum);
+        test(
+	function() {return 1;},
+	function() {return 2;},
+	function() {return 3;}
+);
+
+function test(func1, func2, func3) {
+	console.log( func1() + func2() + func3); 
+}
 /*2*/
-for (let elem in newobj) {
-    console.log(newobj[elem]())
-};
+function func1() {
+	return 1;
+}
+function func2() {
+	return 2;
+}
+function func3() {
+	return 3;
+}
+test(func1, func2, func3); 
+function test(func1, func2, func3) {
+	console.log( func1() + func2() + func3() );
+}
 /*3*/
-let arrNum = [1, 2, 3, 4, 5];
-const calcArr = {
-    sumArr: function (arr) {
-        let sum = 0;
-        for (let elem of arr) {
-            sum += elem
-        }
-            return sum;
-        },
-    sumArrSquare: function (arr) {
-        let sum = 0;
-        for (let elem of arr) {
-            sum += Math.pow(elem, 2)
-        }
-            return sum;
-        },
-    sumArrCube: function (arr) {
-        let sum = 0;
-        for (let elem of arr) {
-            sum += Math.pow(elem, 3)
-        }
-            return sum;
-        }
-    };
-console.log(`Сумма элементов  ${arrNum} = ${ calcArr.sumArr(arrNum) }`);
-console.log(`Сумма квадратов  ${arrNum} = ${ calcArr.sumArrSquare(arrNum) }`);
-console.log(`Сумма кубов  ${arrNum} = ${ calcArr.sumArrCube(arrNum) }`)
+let func1 = function() {
+	return 1;
+}
+let  func2 = function() {
+	return 2;
+}
+let func3 = function() {
+	return 3;
+}
+test(func1, func2, func3); 
+function test(func1, func2, func3) {
+	console.log( func1() + func2() + func3() );
+}
+/*4*/
+test(function(num) {
+	return num ** 3;
+});
+
+function func() {
+	console.log(func(3));
+}
+/*5*/
+let func = function(){
+    console.log(func(3));
+}
+/*6*/
+function test(num, func1, func2) {
+	return func1(num) + func2(num);
+}
+test(2, function(num) {
+	return num * num; 
+}, function(num){
+    return num * num * num;
+});
 
 </script>
 </head>
