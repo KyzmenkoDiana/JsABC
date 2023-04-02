@@ -7,10 +7,12 @@
     <script>
         /*1*/
 let arr = [2025, 12, 31, 23, 59, 59];
-let [year, month, day] = arr;
+let [year, month, day, ...time] = arr;
 console.log(year);  
 console.log(month); 
-console.log(day);  
+console.log(day);   
+
+console.log(time); 
 </script>
 </head>
 <body>
