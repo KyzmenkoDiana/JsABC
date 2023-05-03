@@ -10,14 +10,14 @@ window.onload = function() {
 let elem2 = document.querySelector('#elem2');
 let elem3 = document.querySelector('#elem3');
     elem1.addEventListener('click', function() {
-	console.log('зеленый');
+	console.log('ОРАНЖЕВЫЙ');
 });
 elem2.addEventListener('click', function(event) {
-	console.log('голубой');
+	console.log('СИНИЙ');
 	event.stopPropagation(); 
 });
 elem3.addEventListener('click', function() {
-	console.log('красный');
+	console.log('ЖЕЛТЫЙ');
 });
 }
 </script>
