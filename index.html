@@ -5,9 +5,16 @@
     <meta charset="UTF-8" />
     <title>JS</title>
     <script>
-setInterval(function() {
-	console.log('Diana');
-}, 3000);
+let number = 100;
+
+let timerId = setInterval(() => {
+    console.log(number);
+    number--;
+
+    if (number === 0) {
+        clearInterval(timerId);
+    }
+}, 1000);
 </script>
 </head>
 <body>
